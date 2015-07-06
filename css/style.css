@@ -1,0 +1,273 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ /*J-Edits*/
+
+ body {
+  background-color: white;
+ }
+
+nav {
+  height: 64px;
+}
+
+.seethru {
+  box-shadow: none;
+  background-color: rgba(255,255,255,.0);
+}
+
+.row .col {
+  padding: 0px 0px;
+  transition:background-color .2s;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+.container .row {
+   margin-left: 0.0rem; 
+   margin-right: 0.0rem; 
+}
+
+.navbar-fixed {
+  height: 0px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid #444;
+  transition: all .2s;
+}
+
+nav ul li:hover {
+  border-top: 4px solid white;
+  color: red;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.heropic {
+  height: 100vh;
+}
+
+.megatext {
+  font-weight: 900;
+  font-size: 120px;
+  text-shadow: 0px 0px 10px #333;
+  margin-bottom: 0px;
+}
+
+w {
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px;
+  margin-left: -35px;
+}
+
+.imagebox {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.videobox {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.ghost {
+  height: 50px;
+  margin-top: -50px;
+  color: white;
+}
+
+.offwhite-text {
+  color: #d6d6d6 !important;
+}
+
+.offblack-text {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.shadow {
+  text-shadow: 0px 0px 10px #333;
+}
+
+.wide-container {
+  width: 90%;
+  max-width: 1500px;
+}
+
+.one-unit-high:hover {
+  background-color: #ccc;
+}
+
+
+.one-unit-high {
+  height: 400px;
+}
+
+.smallerbox {
+  height: 300px;
+}
+
+.jcenter {
+  margin:auto;
+  max-width: 450px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.no-margin-bot {
+  margin-bottom: 0px;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.no-side-pad {
+  padding-left: 0px !important;
+  padding-right: 0rem !important;
+}
+
+.tall {
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
+.regtext {
+  font-size: 1rem;
+}
+
+.button-collapse {
+  color: #64B5F6 !important;
+}
+
+.logopad {
+  margin-top: 4px;
+}
+
+footer.page-footer .footer-copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width : 992px) {
+
+    .megatext {
+  font-size: 12.5vw;
+  }
+
+  .arrow {
+    bottom: -31vh;
+  }
+
+  .wide-container {
+    max-width: 999999px;
+    width: 100%;
+  }
+
+}
+
+/*IMAGES*/
+
+.image-1 {
+  background-image: url(../images/pic1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.image-2 {
+  background-image: url(../images/pic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.image-3 {
+  background-image: url(../images/pic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.image-4 {
+  background-image: url(../images/pic4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.image-5 {
+  background-image: url(../images/pic5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+ /*End J-Edits*/
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
