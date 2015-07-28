@@ -109,7 +109,6 @@ w {
   background-color: #ccc;
 }
 
-
 .one-unit-high {
   height: 400px;
 }
@@ -126,6 +125,15 @@ w {
   padding-right: 10px;
 }
 
+.limit-width {
+  margin:auto;
+  max-width: 800px;
+}
+
+.vid-height {
+  min-height: 100px;
+}
+
 .no-margin-bot {
   margin-bottom: 0px;
 }
@@ -136,7 +144,7 @@ w {
 }
 
 .transblack {
-  background-color: rgba(0, 0, 0, 0.85098);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .no-side-pad {
@@ -151,6 +159,7 @@ w {
 
 .smaller-text {
   font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .side-margins {
@@ -160,8 +169,13 @@ w {
 
 .regtext {
   font-size: 1rem;
+  font-weight: 300;
 }
 
+.medtext {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 .button-collapse {
   color: #64B5F6 !important;
 }
@@ -220,6 +234,36 @@ footer.page-footer .footer-copyright {
 
 /*Tables*/
 
+.grey.lighten-j {
+  background-color: #8B8B8B !important;
+}
+
+.infobutton {
+  padding-left: 3px;
+  width: 40px;
+  height: 42px;
+  background-color: rgba(100, 181, 246, 1);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+.product-table .dropdown-content li {
+  clear: both;
+  color: black;
+  line-height: 39px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.product-table ul {
+  box-shadow: none;
+}
+
 .col.grid-example {
   position: relative;
   border: 1px solid #eee;
@@ -272,7 +316,7 @@ footer.page-footer .footer-copyright {
   border-color: transparent transparent transparent teal;
 }
 
-.orange-triangle {
+.indigo-triangle {
   position: absolute;
   top: 0px;
   right: -75px;
@@ -280,7 +324,7 @@ footer.page-footer .footer-copyright {
   height: 0;
   border-style: solid;
   border-width: 51px 0 0 75px;
-  border-color: transparent transparent transparent #ffc107;
+  border-color: transparent transparent transparent #3f51b5;
 }
 
 .blue-triangle {
@@ -294,12 +338,28 @@ footer.page-footer .footer-copyright {
   border-color: transparent transparent transparent #42A5F5;
 }
 
+.grey-triangle {
+  position: absolute;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 42px solid transparent;
+  border-left: 80px solid transparent;
+  border-right: 0px solid #e0e0e0;
+  border-top: 43px solid #e0e0e0;
+}
+
+
+.relative {
+  position: relative;
+}
+
 @media only screen and (max-width: 1200px) {
   .teal-triangle {
   display: none;
   }
 
-.orange-triangle {
+.indigo-triangle {
   display: none;
   }
 
@@ -307,6 +367,52 @@ footer.page-footer .footer-copyright {
   display: none;
   }
 
+}
+
+.product-table .col {
+   border-bottom: 1px solid white;
+   height: 43px;
+}
+
+.product-table h5 {
+  font-size: 1.2rem;
+}
+
+.subcat .s6 {
+ border-left: 1vw  solid #e0e0e0;
+ border-bottom: #e0e0e0;
+}
+
+.null-cell {
+  background-color: #e0e0e0;
+  pointer-events:none;
+}
+
+
+.cell i {
+  position: relative;
+  top: -10px;
+}
+
+.cell {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  text-align: center;
+}
+
+.product-table .col:hover{  
+  background-color: rgba(80, 80, 80, 1) !important;
+  color: white;
+  transition: all .5s;
+}
+
+.nomouse {
+  pointer-events: none;
+}
+
+.logoright {
+  position: static !important;
+  float: right;
 }
 
 /*IMAGES*/
@@ -322,21 +428,22 @@ footer.page-footer .footer-copyright {
   background-image: url(../images/pic2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
 
 .image-3 {
   background-image: url(../images/pic3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
 
 .image-4 {
   background-image: url(../images/pic4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
+
 }
 
 .image-5 {
@@ -352,6 +459,7 @@ nav ul a,
 nav .brand-logo {
   color: #fff;
 }
+
 
 p {
   line-height: 2rem;
@@ -374,12 +482,24 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  .logoright {
+  color: #fff;
+  position: absolute !important;
+  }
+
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+
+
+    .grey-triangle {
+  display: none;
+}
+
 }
 
 .icon-block {
